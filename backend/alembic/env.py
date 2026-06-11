@@ -21,6 +21,7 @@ if config.config_file_name is not None:
 from app.db.database import Base
 from app.models.site import Site
 from app.models.credential import CredentialProfile
+from app.models.device import Device
 
 target_metadata = Base.metadata
 
