@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from app.api.sites import router as sites_router
+from app.api.credentials import router as credentials_router
 
 
 app = FastAPI(
@@ -10,6 +11,7 @@ app = FastAPI(
 
 
 app.include_router(sites_router)
+app.include_router(credentials_router)
 
 
 @app.get("/")
